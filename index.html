@@ -1,617 +1,278 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="main.css" /> -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title>Mohit Chouhan</title>
-  </head>
+<html lang="en">
 
-  <body>
-    <div class="bg-[#0f172a]">
-      <!-- Navbar -->
-      <nav
-        class="z-10 fixed top-0 left-0 w-screen flex flex-row justify-between font-mono"
-        style="background-color: #0a192f"
-      >
-        <div class="h-8 w-8 bg-red-800"></div>
-        <div class="flex flex-row justify-around items-center px-16 text-white">
-          <button class="px-3">
-            <a href="#about"><span class="text-teal-500">01.</span> About</a>
-          </button>
-          <button class="px-3">
-            <a href="#experience"
-              ><span class="text-teal-500">02.</span> Experience</a
-            >
-          </button>
-          <button class="px-3">
-            <a href="#projects"
-              ><span class="text-teal-500">03.</span> Projects</a
-            >
-          </button>
-          <button class="px-3">
-            <a href="#contact"
-              ><span class="text-teal-500">04.</span> Contact</a
-            >
-          </button>
-          <a href="resume.pdf" download="resume.pdf">
-            <button
-              class="text-teal-500 border-2 border-teal-500 px-3 hover:bg-teal-500 hover:text-white rounded-lg"
-            >
-              Resume
-            </button></a
-          >
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Chouhan - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/png" href="images\download.png">
+</head>
 
-      <!-- Side Labels -->
-      <div
-        class="fixed bottom-0 left-16 v-line hidden sm:hidden md:block lg:block"
-      >
-        <a class="p-3" href="https://github.com/CHOUHAN-MOHIT"
-          ><img src="images/icons8-github-48.png" alt="" class="h-8"
-        /></a>
-        <a
-          class="p-3"
-          href="https://www.linkedin.com/in/mohit-chouhan-645b42207/"
-          ><img src="images/linkedin-light.png" alt="" class="h-8"
-        /></a>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-gray-800 py-4 sticky top-0 z-50">
+    <div class="flex flex-wrap md:justify-between justify-center items-center px-4">
+      <div class="flex flex-row items-center"><img src="images/download.png" alt="logo" class="h-8 mx-2">
+      <div class="text-white text-xl font-bold text-center">Portfolio</div>
+    </div>
+      <div>
+        <ul class="flex text-white *:mx-1">
+          <li>
+            <a href="#about"><span class="text-teal-500 mx-1">01.</span>About</a>
+          </li>
+          <li>
+            <a href="#experience"><span class="text-teal-500 mx-1">02.</span>Experience</a>
+          </li>
+          <li>
+            <a href="#projects"><span class="text-teal-500 mx-1">03.</span>Projects</a>
+          </li>
+          <li>
+            <a href="#contact"><span class="text-teal-500 mx-1">04.</span>Contact</a>
+          </li>
+        </ul>
       </div>
-      <div
-        class="fixed bottom-0 right-16 text-white v-line hidden sm:hidden md:block lg:block"
-      >
-        <a
-          href="mailto:chouhanmohit424@gmail.com"
-          class="text-top text-sm text-gray-400 hover:text-teal-200"
-          style="writing-mode: vertical-rl"
-          >Chouhanmohit424@gmail.com</a
-        >
-      </div>
+    </div>
+  </nav>
 
-      <!-- Main Content -->
-      <div
-        class="container-sm lg:mx-58 md:mx-32 sm:mx-8 text-white overflow-hidden"
-      >
-        <!-- Intro -->
-        <div class="flex flex-col h-screen m-auto place-content-center px-8">
-          <div class="text-teal-500 py-3 text-2xl">Hi, My name is</div>
-          <div class="text-8xl font-bold py-3 text-gray-300">Mohit Chouhan</div>
-          <div class="text-6xl font-bold py-3 pr-8 text-gray-400">
-            Bringing imagination to life with technology.
-          </div>
-          <div>
-            <p class="text-gray-400 py-5 text-xl">
-              I'm a software engineer specializing in building (and occasionally
-              <br />
-              designing) exceptional digital experiences. Currently, I'm focused
-              on <br />
-              building accessible, human-centered products at Upstatement.
-            </p>
-          </div>
-          <div>
-            <button
-              class="border-solid border-2 border-teal-500 rounded px-4 py-2 text-teal-500"
-            >
-              Button
-            </button>
+  <!-- Main Content -->
+  <div class="mx-auto bg-gray-900">
+    <!-- intro -->
+    <section id="intro" class="h-screen flex items-center bg-gray-900 text-white">
+      <div class="container mx-auto px-4 max-w-5xl">
+        <div class="flex flex-col md:flex-row items-center justify-center">
+          <div class="md:flex-auto px-8">
+            <div class="text-teal-500 text-2xl py-3">Hi, My name is</div>
+            <div class="text-4xl md:text-6xl font-bold py-3 text-gray-300">
+              Mohit Chouhan
+            </div>
+            <div class="text-4xl md:text-6xl font-bold py-3 pr-8 text-gray-400">
+              Bringing imagination to life with technology.
+            </div>
+            <div class="py-5 text-lg md:text-xl text-gray-400">
+              <p>
+                I'm a software engineer specializing in building (and
+                occasionally designing) exceptional digital experiences.
+                Currently, I'm focused on building accessible, human-centered
+                products at Upstatement.
+              </p>
+            </div>
+            <div>
+              <button class="border-solid border-2 border-teal-500 rounded px-4 py-2 text-teal-500">
+                Resume
+              </button>
+            </div>
           </div>
         </div>
-        <!-- about me -->
-        <div
-          class="flex flex-wrap h-screen m-auto max-w-screen-lg items-center px-8"
-          id="about"
-        >
-          <div class="flex flex-col lg:basis-[450px] basis-full text-lg">
-            <h1 class="font-bold text-4xl mb-5">
-              <span class="text-teal-500">01.</span> About Me
-            </h1>
-            <p class="mb-2">
-              Hey, I'm Mohit Chouhan, a software development enthusiast. I have
-              hands-on experience in programming languages such as C++ and
-              Python, and I'm proficient in web development.
-            </p>
-            <p class="mb-2">
-              My passion for technology and finding innovative solutions to
-              problems drives me to constantly learn and explore new
-              technologies. My ultimate goal is to build user-friendly
-              applications that make a positive impact on people's lives. I'm
-              excited about the prospect of working with a team of experienced
-              professionals who can help me expand my skill set.
-            </p>
-            <p class="mb-2">
-              Thanks for visiting my portfolio website, and I look forward to
-              hearing from you soon!
-            </p>
-            <p class="mb-2">
-              Here are a few technologies I've been working with recently:
-            </p>
-            <ul
-              class="list-inside list-disc grid grid-cols-2 gap-2 text-teal-500"
-            >
-              <div>
-                <li>Python</li>
-                <li>C++</li>
-                <li>Java</li>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="h-screen flex items-center bg-gray-900">
+      <div
+        class="text-white p-6 rounded-lg shadow-md mx-auto flex flex-col-reverse flex-col md:flex-row items-center md:justify-between max-w-5xl">
+        <div class="*:text-justify">
+          <h2 class="text-2xl font-bold mb-4">
+            <span class="text-2xl font-bold mb-4 text-teal-500">01. </span>
+            About Me
+          </h2>
+          <p class="text-lg">
+            I'm Mohit Chouhan, a final year B.Tech student passionate about
+            software development. I specialize in web development and have
+            experience with languages like Python, C++, and Java.
+          </p>
+          <p class="text-lg">
+            My goal is to build user-friendly applications that have a
+            positive impact on people's lives. I'm currently seeking software
+            development roles where I can contribute my skills and continue
+            learning.
+          </p>
+        </div>
+        <div class="m-4">
+          <div class="flex justify-center mt-8 md:mt-0">
+            <div class="relative">
+              <div
+                class="md:h-80 md:w-80 h-64 w-64 bg-teal-500 rounded-lg after:border-2 after:border-teal-500 after:absolute after:top-0 after:left-0 after:content after:h-full after:w-full after:rounded-lg after:translate-x-4 after:translate-y-4">
               </div>
-              <div>
-                <li>Html</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+              <img src="images/me-profile1.png" alt="Profile Image"
+                class="md:h-80 md:w-80 h-64 w-64 rounded-lg absolute inset-0" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="h-screen flex items-center bg-gray-900">
+      <div class="px-6 rounded-lg mx-auto text-white max-w-5xl">
+        <h2 class="text-2xl font-bold mb-4">
+          <span class="text-2xl font-bold mb-4 text-teal-500">02. </span>Experience
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="mx-4">
+            <div class="flex flex-row items-center">
+              <div class="font-semibold flex-auto">
+                Web Developer <span class="text-teal-500">@FusionIIIT</span>
               </div>
+              <a href="" class="bg-teal-500 rounded-full px-3 py-1">Github</a>
+            </div>
+            <ul class="list-disc pl-6 mt-2 *:text-justify marker:text-teal-500">
+              <li>
+                Spearheaded web development for the institute's vital ERP
+                project, FusionIIIT, resulting in a substantial increase in
+                operational efficiency.
+              </li>
+              <li>
+                Led the team of 7 members to work on General Administration
+                module.
+              </li>
+              <li>
+                Executed SRS use cases, resolved bugs, enhancing overall
+                project performance.
+              </li>
+              <li>
+                Efficiently applied updates to the server, ensuring successful
+                deployment.
+              </li>
             </ul>
           </div>
 
-          <div
-            class="flex items-center basis-full lg:basis-auto mx-auto my-6"
-            style="justify-content: center"
-          >
-            <div
-              class="border-2 border-teal-500 h-72 w-72 z-0 relative rounded-lg"
-            >
-              <div
-                class="bg-teal-700 h-72 w-72 z-10 relative rounded-lg overflow-hidden bottom-4 right-4"
-              >
-                <img
-                  class="object-cover opacity-100"
-                  src="images/me-profile1.png"
-                  alt=""
-                />
+          <div class="mx-4">
+            <div class="flex flex-row items-center">
+              <div class="text-xl font-semibold flex-auto">
+                Contributor <span class="text-teal-500">@Alumni Connect</span>
               </div>
+              <a href="" class="bg-teal-500 rounded-full px-3 py-1">Github</a>
             </div>
+            <ul class="list-disc pl-6 mt-2 *:text-justify marker:text-teal-500">
+              <li>
+                Active involvement in the Institute's Alumni Connect portal as a
+                voluntary contributor.
+              </li>
+              <li>
+                Refactored the job posting module, improved the user profile
+                frontend, and implemented job posting functionality.
+              </li>
+              <li>
+                Revamped user profile by designing cards for work and education
+                and enhancing the footer and job posting form.
+              </li>
+              <li>
+                Enhanced code readability, efficiency, and user experience in
+                the profile section, making it more meaningful.
+              </li>
+            </ul>
           </div>
         </div>
-        <!-- where i have worked -->
-        <div
-          class="flex flex-col h-screen m-auto place-content-center max-w-screen-lg pt-48 md:pt-8"
-          id="experience"
-        >
-          <div class="font-bold text-4xl mb-5 ml-10">
-            <span class="text-teal-500">02.</span> Where I'have worked
-          </div>
-          <div class="flex flex-row container ml-10">
-            <div class="flex flex-col items-start text-2xl">
-              <button
-                class="border-l-2 border-teal-200 px-4 py-2"
-                onclick="describe('FusionIIIT-desc')"
-                id="FusionIIIT"
-              >
-                FusionIIIT
-              </button>
-              <button
-                class="border-l-2 border-teal-200 px-4 py-2"
-                onclick="describe('AlumniConnect-desc')"
-                id="AlumniConnect"
-              >
-                AlumniConnect
-              </button>
-              <!-- <button class="border-l-2 border-teal-200 px-4 py-2" onclick="describe('microsoft-desc')"
-                        id="microsoft">Microsoft</button>
-                    <button class="border-l-2 border-teal-200 px-4 py-2" onclick="describe('google-desc')"
-                        id="google">Google</button>
-                    <button class="border-l-2 border-teal-200 px-4 py-2" onclick="describe('netflix-desc')"
-                        id="netflix">Netflix</button> -->
-            </div>
+    </section>
 
-            <div class="mx-6 hidden" id="AlumniConnect-desc">
-              <h1 class="text-2xl font-bold">
-                Web Developer <span class="text-teal-500"> @AlumniConnect</span>
-              </h1>
-              <ul class="list-outside list-disc m-2 text-lg">
-                <li>worked as web developer on institutes alumni site</li>
-                <li>Designed user profile page and footer for the website.</li>
-              </ul>
-            </div>
-            <div class="mx-6" id="FusionIIIT-desc">
-              <h1 class="text-2xl font-bold">
-                Web Developer <span class="text-teal-500"> @FusionIIIT</span>
-              </h1>
-              <ul class="list-outside list-disc m-2">
-                <li>
-                  Currently working as software developer on institutes project
-                  FusionIIIT
-                </li>
-                <li>Team lead of general adiministraion module.</li>
-                <li>implemented some important usecase.</li>
-              </ul>
-            </div>
-            <div class="mx-6" style="display: none" id="netflix-desc">
-              <h1 class="text-2xl font-bold">
-                UI Engineer Co-op <span class="text-teal-500"> @Netflix</span>
-              </h1>
-              <ul class="list-outside list-disc m-2">
-                <li>worked as web developer on institutes alumni site</li>
-                <li>Designed user profile page and footer for the website.</li>
-              </ul>
-            </div>
-            <div class="mx-6" style="display: none" id="google-desc">
-              <h1 class="text-2xl font-bold">
-                UI Engineer Co-op <span class="text-teal-500"> @Google</span>
-              </h1>
-              <ul class="list-outside list-disc m-2">
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dignissimos tempora accusantium ab commodi quo, neque
-                  perferendis? Sapiente blanditiis vitae, eaque minus tenetur,
-                  numquam maxime explicabo reiciendis tempore, dignissimos magni
-                  impedit!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur dolores quam velit hic fugit quaerat aperiam vel
-                  aliquam officia repellat incidunt minus, deleniti soluta
-                  facilis ipsam laboriosam veniam explicabo exercitationem!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas iure blanditiis, excepturi aperiam at nobis dicta
-                  eveniet est accusamus similique expedita voluptatibus quidem
-                  laudantium praesentium asperiores recusandae rem architecto
-                  quis.
-                </li>
-              </ul>
-            </div>
-            <div class="mx-6 hidden" id="microsoft-desc">
-              <h1 class="text-2xl font-bold">
-                UI Engineer Co-op <span class="text-teal-500"> @Microsoft</span>
-              </h1>
-              <ul class="list-outside list-disc m-2">
-                <li>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Dignissimos tempora accusantium ab commodi quo, neque
-                  perferendis? Sapiente blanditiis vitae, eaque minus tenetur,
-                  numquam maxime explicabo reiciendis tempore, dignissimos magni
-                  impedit!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Consectetur dolores quam velit hic fugit quaerat aperiam vel
-                  aliquam officia repellat incidunt minus, deleniti soluta
-                  facilis ipsam laboriosam veniam explicabo exercitationem!
-                </li>
-                <li>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Voluptas iure blanditiis, excepturi aperiam at nobis dicta
-                  eveniet est accusamus similique expedita voluptatibus quidem
-                  laudantium praesentium asperiores recusandae rem architecto
-                  quis.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Projects -->
-        <div
-          class="flex flex-col mih-h-screen m-auto pt-16 place-content-center max-w-screen-lg"
-          id="projects"
-        >
-          <!-- featured projects -->
-          <div class="font-bold text-4xl mb-5 ml-10">
-            <span class="text-teal-500">03.</span>
-            Some Things I've Built
-          </div>
-          <div class="flex flex-row container p-8">
-            <div
-              class="basis-7/12 rounded"
-              style="
-                background-image: url(https://source.unsplash.com/random/600x450/?technologies);
-              "
-            ></div>
-            <div
-              class="flex flex-col basis-5/12 h-80 text-right flex-wrap content-center"
-            >
+    <!-- Projects Section -->
+    <section id="projects" class="h-screen flex items-center bg-gray-900">
+      <div class="p-6 rounded-lg text-white mx-auto">
+        <h2 class="text-2xl font-bold mb-4">
+          <span class="text-2xl font-bold mb-4 text-teal-500">03. </span>Projects
+        </h2>
+        <div class="flex flex-col max-w-5xl">
+          <div class="flex flex-row text-left my-2 items-center">
+            <div class="md:basis-1/2 z-10">
               <div class="mt-auto text-teal-500">Featured Project</div>
-              <div class="text-2xl font-semibold">Online Judge</div>
-              <a
-                class="bg-green-700 ml-auto mb-4 text-xs rounded-full font-semibold px-2"
-                >Deployed on AWS</a
-              >
-              <div
-                class="pr-8 p-3 rounded -ml-16"
-                style="background-color: #112240"
-              >
-                Created a web-based coding platform using Django and Tailwind
-                CSS that enables users to solve coding problems and participate
-                in coding contests.
+              <div class="text-2xl font-semibold pb-4">E-Learning Plateform</div>
+              <div class="flex flex-row justify-start">
+                <a class="bg-green-700 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+                <a class="bg-green-700 mx-2 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
               </div>
-              <div class="flex flex-row-reverse mb-auto font-semibold">
-                <div class="p-2">Tailwind CSS</div>
+              <div class="p-4 rounded bg-gray-800 md:-mr-16 mt-2">
+                A web based E-Learning plateform where a student can enroll in any number of courses and watch lectures.
+              </div>
+              <div class="flex flex-row mb-auto *:text-teal-500">
+                <div class="py-2">MySql</div>
+                <div class="p-2">PHP</div>
+                <div class="p-2">Bootstrap</div>
+                <div class="p-2">HTML</div>
+              </div>
+            </div>
+            <div class="w-full md:basis-1/2 hidden md:block">
+              <img src="images/p3.jpg" alt="Person holding a cell phone" class="rounded-lg">
+            </div>
+          </div>
+          <div class="flex flex-row text-right my-2 items-center">
+            <div class="md:basis-1/2 hidden md:block">
+              <img src="images/p3.jpg" alt="Person holding a cell phone" class="rounded-lg">
+            </div>
+            <div class="md:basis-1/2">
+              <div class="text-teal-500">Featured Project</div>
+              <div class="text-2xl font-semibold">Online Judge</div>
+              <div class="flex flex-row justify-end">
+                <a class="bg-green-700 mx-2 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+                <a class="bg-green-700 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+              </div>
+              <div class="p-4 rounded bg-gray-800 md:-ml-16 mt-2">
+                Created a web-based coding platform using Django and Tailwind CSS that enables users to solve coding
+                problems and participate in coding contests.
+              </div>
+              <div class="flex flex-row-reverse mb-auto *:text-teal-500">
+                <div class="py-2">TailwindCSS</div>
                 <div class="p-2">Postgres</div>
                 <div class="p-2">HTML</div>
                 <div class="p-2">Django</div>
               </div>
             </div>
           </div>
-
-          <div class="flex flex-row container p-8">
-            <div
-              class="flex flex-col basis-5/12 h-80 text-left flex-wrap content-center z-20"
-            >
+          <div class="flex flex-row text-left my-2 items-center">
+            <div class="md:basis-1/2 z-10">
               <div class="mt-auto text-teal-500">Featured Project</div>
               <div class="text-2xl font-semibold pb-4">
                 E-Learning Plateform
               </div>
-              <div
-                class="pr-8 p-3 rounded -mr-16"
-                style="background-color: #112240"
-              >
+              <div class="flex flex-row justify-start">
+                <a class="bg-green-700 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+                <a class="bg-green-700 mx-2 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+              </div>
+              <div class="p-4 rounded bg-gray-800 md:-mr-16 mt-2">
                 A web based E-Learning plateform where a student can enroll in
                 any number of courses and watch lectures.
               </div>
-              <div class="flex flex-row mb-auto font-semibold">
-                <div class="p-2">MySql</div>
+              <div class="flex flex-row mb-auto *:text-teal-500">
+                <div class="py-2">MySql</div>
                 <div class="p-2">PHP</div>
                 <div class="p-2">Bootstrap</div>
                 <div class="p-2">HTML</div>
               </div>
             </div>
-            <div
-              class="basis-7/12 rounded z-10"
-              style="
-                background-image: url(https://source.unsplash.com/random/600x350/?app);
-              "
-            ></div>
-          </div>
-
-          <div class="m-auto text-4xl p-4 font-semibold">Achievements</div>
-          <div
-            class="grid grid-cols-3 gap-5 justify-items-center mx-auto leading-tight"
-          >
-            <div
-              class="md:h-72 h-48 w-48 md:w-72 p-4 rounded flex flex-col liftup"
-              style="background-color: #112240"
-            >
-              <div class="flex flex-row justify-between">
-                <img
-                  class="m-4 h-10"
-                  src="images/folder.png"
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  class="m-4 h-8"
-                  src="images/ex-link.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <h1 class="font-bold text-zinc-300 text-lg px-3">
-                Integrating Algolia Search with WordPress Multisite
-              </h1>
-              <p class="p-3 text-sm text-zinc-300">
-                Building a custom multisite compatible WordPress plugin to build
-                global search with Algolia
-              </p>
-              <div
-                class="grid grid-cols-4 p-3 text-zinc-600 text-sm font-bold font-mono"
-              >
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Node</span>
-              </div>
-            </div>
-            <div
-              class="md:h-72 h-48 w-48 md:w-72 p-4 rounded flex flex-col liftup"
-              style="background-color: #112240"
-            >
-              <div class="flex flex-row justify-between">
-                <img
-                  class="m-4 h-10"
-                  src="images/folder.png"
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  class="m-4 h-8"
-                  src="images/ex-link.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <h1 class="font-bold text-zinc-300 text-lg px-3">
-                Integrating Algolia Search with WordPress Multisite
-              </h1>
-              <p class="p-3 text-sm text-zinc-300">
-                Building a custom multisite compatible WordPress plugin to build
-                global search with Algolia
-              </p>
-              <div
-                class="grid grid-cols-4 p-3 text-zinc-600 text-sm font-bold font-mono"
-              >
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Node</span>
-              </div>
-            </div>
-            <div
-              class="md:h-72 h-48 w-48 md:w-72 p-4 rounded flex flex-col liftup"
-              style="background-color: #112240"
-            >
-              <div class="flex flex-row justify-between">
-                <img
-                  class="m-4 h-10"
-                  src="images/folder.png"
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  class="m-4 h-8"
-                  src="images/ex-link.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <h1 class="font-bold text-zinc-300 text-lg px-3">
-                Integrating Algolia Search with WordPress Multisite
-              </h1>
-              <p class="p-3 text-sm text-zinc-300">
-                Building a custom multisite compatible WordPress plugin to build
-                global search with Algolia
-              </p>
-              <div
-                class="grid grid-cols-4 p-3 text-zinc-600 text-sm font-bold font-mono"
-              >
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Node</span>
-              </div>
-            </div>
-            <div
-              class="md:h-72 h-48 w-48 md:w-72 p-4 rounded flex flex-col liftup"
-              style="background-color: #112240"
-            >
-              <div class="flex flex-row justify-between">
-                <img
-                  class="m-4 h-10"
-                  src="images/folder.png"
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  class="m-4 h-8"
-                  src="images/ex-link.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <h1 class="font-bold text-zinc-300 text-lg px-3">
-                Integrating Algolia Search with WordPress Multisite
-              </h1>
-              <p class="p-3 text-sm text-zinc-300">
-                Building a custom multisite compatible WordPress plugin to build
-                global search with Algolia
-              </p>
-              <div
-                class="grid grid-cols-4 p-3 text-zinc-600 text-sm font-bold font-mono"
-              >
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Node</span>
-              </div>
-            </div>
-            <div
-              class="md:h-72 h-48 w-48 md:w-72 p-4 rounded flex flex-col liftup"
-              style="background-color: #112240"
-            >
-              <div class="flex flex-row justify-between">
-                <img
-                  class="m-4 h-10"
-                  src="images/folder.png"
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  class="m-4 h-8"
-                  src="images/ex-link.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <h1 class="font-bold text-zinc-300 text-lg px-3">
-                Integrating Algolia Search with WordPress Multisite
-              </h1>
-              <p class="p-3 text-sm text-zinc-300">
-                Building a custom multisite compatible WordPress plugin to build
-                global search with Algolia
-              </p>
-              <div
-                class="grid grid-cols-4 p-3 text-zinc-600 text-sm font-bold font-mono"
-              >
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Node</span>
-              </div>
-            </div>
-            <div
-              class="md:h-72 h-48 w-48 md:w-72 p-4 rounded flex flex-col liftup"
-              style="background-color: #112240"
-            >
-              <div class="flex flex-row justify-between">
-                <img
-                  class="m-4 h-10"
-                  src="images/folder.png"
-                  alt=""
-                  srcset=""
-                />
-                <img
-                  class="m-4 h-8"
-                  src="images/ex-link.png"
-                  alt=""
-                  srcset=""
-                />
-              </div>
-              <h1 class="font-bold text-zinc-300 text-lg px-3">
-                Integrating Algolia Search with WordPress Multisite
-              </h1>
-              <p class="p-3 text-sm text-zinc-300">
-                Building a custom multisite compatible WordPress plugin to build
-                global search with Algolia
-              </p>
-              <div
-                class="grid grid-cols-4 p-3 text-zinc-600 text-sm font-bold font-mono"
-              >
-                <span>Next.js</span>
-                <span>MongoDB</span>
-                <span>Node</span>
-              </div>
+            <div class="w-full md:basis-1/2 hidden md:block">
+              <img src="images/p3.jpg" alt="Person holding a cell phone" class="rounded-lg">
             </div>
           </div>
-        </div>
-        <div
-          class="flex flex-col h-screen m-auto place-content-center text-center max-w-screen-lg"
-          id="contact"
-        >
-          <h3 class="text-teal-500 text-lg">04. What's Next?</h3>
-          <h1 class="font-bold text-5xl mb-5">Get in Touch</h1>
-          <p class="px-40 mx-12 text-lg">
-            Thank you for visiting my portfolio! <br />
-            If you have any questions or would like to connect, please feel free
-            to drop me Email on
-            <a
-              href="mailto:chouhanmohit424@gmail.com"
-              class="text-teal-500 font-mono"
-              >chouhanmohit424@gmail.com</a
-            >
-            . I'm always open to new opportunities and am excited about the
-            prospect of working with others to create innovative and impactful
-            solutions.
-          </p>
-          <button
-            class="border-solid border-2 border-teal-500 rounded px-8 py-3 mx-auto my-5 text-teal-500"
-          >
-            Say Hello
-          </button>
         </div>
       </div>
+    </section>
+    <!-- contact -->
+    <section class="bg-gray-900 text-white h-screen flex items-center justify-center">
+      <div class="text-center max-w-5xl" id="contact">
+        <h3 class="text-teal-500 text-lg">04. What's Next?</h3>
+        <h1 class="font-bold text-5xl mb-5">Get in Touch</h1>
+        <p class="px-6 text-lg text-center">
+          Thank you for visiting my portfolio! <br />
+          If you have any questions or would like to connect, please feel free
+          to drop me Email on
+          <a href="mailto:chouhanmohit424@gmail.com" class="text-teal-500 font-mono">chouhanmohit424@gmail.com</a>
+          . I'm always open to new opportunities and am excited about the
+          prospect of working with others to create innovative and impactful
+          solutions.
+        </p>
+        <button class="border-solid border-2 border-teal-500 rounded px-8 py-3 mx-auto my-5 text-teal-500">
+          Say Hello
+        </button>
+      </div>
+    </section>
+  </div>
 
-      <footer class="flex flex-col place-items-center mb-5 text-white">
-        <div>Inspired by Brittany Chiang</div>
-        <div>Build by Mohit Chouhan</div>
-      </footer>
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-4">
+    <div class="container mx-auto text-center text-white">
+      <p>&copy; 2024 Mohit Chouhan. All rights reserved.</p>
     </div>
+  </footer>
+</body>
 
-    <script>
-      function describe(id) {
-        var dict = {
-          1: "AlumniConnect-desc",
-          2: "FusionIIIT-desc",
-          3: "microsoft-desc",
-          4: "google-desc",
-          5: "netflix-desc",
-        };
-
-        for (let i = 1; i <= 5; i++) {
-          if (dict[i] == id) {
-            document.getElementById(dict[i]).style.display = "block";
-            console.log(document.getElementById(dict[i]).style.display);
-          } else {
-            document.getElementById(dict[i]).style.display = "none";
-            console.log(document.getElementById(dict[i]).style.display);
-          }
-        }
-      }
-    </script>
-  </body>
 </html>
-
-<!-- https://source.unsplash.com/random/600x350 -->
