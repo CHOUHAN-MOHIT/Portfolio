@@ -5,30 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohit Chouhan - Portfolio</title>
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/png" href="images\download.png">
 </head>
 
 <body class="bg-gray-100">
   <!-- Navbar -->
-  <nav class="bg-gray-800 py-4 sticky top-0 z-50">
+  <nav class="bg-gray-800 py-3 sticky top-0 z-50">
     <div class="flex flex-wrap md:justify-between justify-center items-center px-4">
       <div class="flex flex-row items-center"><img src="images/download.png" alt="logo" class="h-8 mx-2">
-      <div class="text-white text-xl font-bold text-center">Portfolio</div>
-    </div>
-      <div>
-        <ul class="flex text-white *:mx-1">
+        <div class="text-white text-xl font-bold text-center">Portfolio</div>
+      </div>
+      <div class="my-1">
+        <ul class="flex text-white *:mx-1 sm:text-base text-xs">
           <li>
             <a href="#about"><span class="text-teal-500 mx-1">01.</span>About</a>
           </li>
           <li>
-            <a href="#experience"><span class="text-teal-500 mx-1">02.</span>Experience</a>
+            <a href="#skills"><span class="text-teal-500 mx-1">02.</span>Skills</a>
           </li>
           <li>
-            <a href="#projects"><span class="text-teal-500 mx-1">03.</span>Projects</a>
+            <a href="#experience"><span class="text-teal-500 mx-1">03.</span>Experience</a>
           </li>
           <li>
-            <a href="#contact"><span class="text-teal-500 mx-1">04.</span>Contact</a>
+            <a href="#projects"><span class="text-teal-500 mx-1">04.</span>Projects</a>
+          </li>
+          <li>
+            <a href="#contact"><span class="text-teal-500 mx-1">05.</span>Contact</a>
           </li>
         </ul>
       </div>
@@ -46,21 +50,21 @@
             <div class="text-4xl md:text-6xl font-bold py-3 text-gray-300">
               Mohit Chouhan
             </div>
-            <div class="text-4xl md:text-6xl font-bold py-3 pr-8 text-gray-400">
+            <div class="text-3xl md:text-4xl font-bold py-3 pr-8 text-gray-400">
               Bringing imagination to life with technology.
             </div>
             <div class="py-5 text-lg md:text-xl text-gray-400">
               <p>
-                I'm a software engineer specializing in building (and
-                occasionally designing) exceptional digital experiences.
-                Currently, I'm focused on building accessible, human-centered
-                products at Upstatement.
+                I'm a passionate software enthusiast with a knack for bringing innovative ideas to life through
+                technology. With a strong background in web development and a commitment to continuous learning, I'm
+                eager to contribute my skills to impactful projects and tackle new challenges as a software developer.
+                Let's create something amazing together!
               </p>
             </div>
             <div>
-              <button class="border-solid border-2 border-teal-500 rounded px-4 py-2 text-teal-500">
+              <a target="_blank" href="https://drive.google.com/drive/folders/1dfRwDlEK1jidq80zUhQ2pMU6vizeWcpX?usp=sharing" class="border-solid border-2 border-teal-500 rounded px-4 py-2 text-teal-500">
                 Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -70,23 +74,22 @@
     <!-- About Section -->
     <section id="about" class="h-screen flex items-center bg-gray-900">
       <div
-        class="text-white p-6 rounded-lg shadow-md mx-auto flex flex-col-reverse flex-col md:flex-row items-center md:justify-between max-w-5xl">
+        class="text-white p-6 rounded-lg mx-auto flex flex-col-reverse flex-col md:flex-row items-center md:justify-between max-w-5xl">
         <div class="*:text-justify">
           <h2 class="text-2xl font-bold mb-4">
             <span class="text-2xl font-bold mb-4 text-teal-500">01. </span>
             About Me
           </h2>
-          <p class="text-lg">
-            I'm Mohit Chouhan, a final year B.Tech student passionate about
-            software development. I specialize in web development and have
-            experience with languages like Python, C++, and Java.
-          </p>
-          <p class="text-lg">
-            My goal is to build user-friendly applications that have a
-            positive impact on people's lives. I'm currently seeking software
-            development roles where I can contribute my skills and continue
-            learning.
-          </p>
+          <div>
+            <div class="mb-8">
+              <p class="text-lg">
+                Hi, I'm Mohit Chouhan, a final-year B.Tech student with a passion for software development. Specializing
+                in web development, I've honed my skills in Python, C++, and Java through active participation in coding
+                competitions and projects during my college years. My goal is to create user-friendly applications that
+                positively impact people's lives.
+              </p>
+            </div>
+          </div>
         </div>
         <div class="m-4">
           <div class="flex justify-center mt-8 md:mt-0">
@@ -102,19 +105,118 @@
       </div>
     </section>
 
+    <!-- Skills -->
+    <section id="skills" class="h-screen flex items-center bg-gray-900">
+      <div class="mx-auto text-white lg:w-2/3 md:w-full p-6">
+        <h2 class="text-2xl font-bold mb-4">
+          <span class="text-2xl font-bold mb-4 text-teal-500">02. </span>Skills
+        </h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <!-- Languages -->
+          <div class="skills-group">
+            <h3 class="text-lg font-semibold mb-2 text-center text-teal-500 border border-teal-500 rounded p-1">
+              Languages</h3>
+            <ul class="*:p-1 *:my-1 *:bg-gray-800 *:rounded">
+              <li class="flex items-center">
+                <img src="/images/icons8-c-50.png" alt="C++ Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">C/C++</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-python-50.png" alt="Python Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Python</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-javascript-50.png" alt="JavaScript Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">JavaScript</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-java-50.png" alt="Java Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Java</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Frameworks -->
+          <div class="skills-group">
+            <h3 class="text-lg font-semibold mb-2 text-center text-teal-500 border border-teal-500 rounded p-1">Web
+              Frameworks</h3>
+            <ul class="*:p-1 *:my-1 *:bg-gray-800 *:rounded">
+              <li class="flex items-center">
+                <img src="/images/icons8-django-50.png" alt="Django Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Django</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-react-48.png" alt="Tailwind CSS Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">React</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-tailwind-css-48.png" alt="Tailwind CSS Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Tailwind CSS</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-postgresql-48.png" alt="Tailwind CSS Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Postgresql</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Tools -->
+          <div class="skills-group">
+            <h3 class="text-lg font-semibold mb-2 text-center text-teal-500 border border-teal-500 rounded p-1">Tools
+            </h3>
+            <ul class="*:p-1 *:my-1 *:bg-gray-800 *:rounded">
+              <li class="flex items-center">
+                <img src="/images/icons8-git-48.png" alt="Git Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Git</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-docker-48.png" alt="Docker Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Docker</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-amazon-web-services-48.png" alt="AWS Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">AWS</span>
+              </li>
+            </ul>
+          </div>
+          <!-- others -->
+          <div class="skills-group">
+            <h3 class="text-lg font-semibold mb-2 text-center text-teal-500 border border-teal-500 rounded p-1">Others
+            </h3>
+            <ul class="*:p-1 *:my-1 *:bg-gray-800 *:rounded">
+              <li class="flex items-center">
+                <img src="/images/icons8-mysql-logo-48.png" alt="Tailwind CSS Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">MySql</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-html-50.png" alt="Django Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">Html</span>
+              </li>
+              <li class="flex items-center">
+                <img src="/images/icons8-css-50.png" alt="Tailwind CSS Logo" class="w-8 h-8 mr-2">
+                <span class="text-lg font-semibold">CSS</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
     <!-- Experience Section -->
-    <section id="experience" class="h-screen flex items-center bg-gray-900">
+    <section id="experience" class="min-h-screen flex items-center bg-gray-900">
       <div class="px-6 rounded-lg mx-auto text-white max-w-5xl">
         <h2 class="text-2xl font-bold mb-4">
-          <span class="text-2xl font-bold mb-4 text-teal-500">02. </span>Experience
+          <span class="text-2xl font-bold mb-4 text-teal-500">03. </span>Experience
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="mx-4">
             <div class="flex flex-row items-center">
-              <div class="font-semibold flex-auto">
+              <div class="text-xl font-semibold flex-auto">
                 Web Developer <span class="text-teal-500">@FusionIIIT</span>
               </div>
-              <a href="" class="bg-teal-500 rounded-full px-3 py-1">Github</a>
+              <a href="https://github.com/FusionIIIT/Fusion/pulls?q=author%3ACHOUHAN-MOHIT" target="_blank" class="bg-teal-500 rounded-full px-2 py-1 flex items-center"><img
+                  src="/images/icons8-github-48.png" alt="Git Logo" class="w-6 h-6 mr-2">Github</a>
             </div>
             <ul class="list-disc pl-6 mt-2 *:text-justify marker:text-teal-500">
               <li>
@@ -123,7 +225,7 @@
                 operational efficiency.
               </li>
               <li>
-                Led the team of 7 members to work on General Administration
+                Lead the team of 7 members to work on General Administration
                 module.
               </li>
               <li>
@@ -142,7 +244,8 @@
               <div class="text-xl font-semibold flex-auto">
                 Contributor <span class="text-teal-500">@Alumni Connect</span>
               </div>
-              <a href="" class="bg-teal-500 rounded-full px-3 py-1">Github</a>
+              <a href="https://github.com/BitByte-TPC/alumni/pull/99" target="_blank" class="bg-teal-500 rounded-full px-2 py-1 flex items-center"><img
+                  src="/images/icons8-github-48.png" alt="Git Logo" class="w-6 h-6 mr-2">Github</a>
             </div>
             <ul class="list-disc pl-6 mt-2 *:text-justify marker:text-teal-500">
               <li>
@@ -167,44 +270,46 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="h-screen flex items-center bg-gray-900">
+    <section id="projects" class="min-h-screen flex items-center bg-gray-900">
       <div class="p-6 rounded-lg text-white mx-auto">
         <h2 class="text-2xl font-bold mb-4">
-          <span class="text-2xl font-bold mb-4 text-teal-500">03. </span>Projects
+          <span class="text-2xl font-bold mb-4 text-teal-500">04. </span>Projects
         </h2>
         <div class="flex flex-col max-w-5xl">
           <div class="flex flex-row text-left my-2 items-center">
             <div class="md:basis-1/2 z-10">
               <div class="mt-auto text-teal-500">Featured Project</div>
-              <div class="text-2xl font-semibold pb-4">E-Learning Plateform</div>
+              <div class="text-2xl font-semibold pb-4">Group-based ChatApp</div>
               <div class="flex flex-row justify-start">
-                <a class="bg-green-700 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+                <a href="https://github.com/CHOUHAN-MOHIT/ChatApp" target="_blank" class="bg-green-700 mr-2 text-xs rounded-full font-semibold px-2 py-1 flex items-center"><img
+                  src="/images/icons8-github-48.png" alt="Git Logo" class="w-4 h-4 mr-2">Github</a>
                 <a class="bg-green-700 mx-2 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
               </div>
               <div class="p-4 rounded bg-gray-800 md:-mr-16 mt-2">
-                A web based E-Learning plateform where a student can enroll in any number of courses and watch lectures.
+                Developed a dynamic Group-based ChatApp with admin-managed rooms and real-time communication using Django, React, and AWS.
               </div>
               <div class="flex flex-row mb-auto *:text-teal-500">
-                <div class="py-2">MySql</div>
-                <div class="p-2">PHP</div>
-                <div class="p-2">Bootstrap</div>
-                <div class="p-2">HTML</div>
+                <div class="py-2">Django</div>
+                <div class="p-2">React</div>
+                <div class="p-2">Postgresql</div>
+                <div class="p-2">AWS</div>
               </div>
             </div>
             <div class="w-full md:basis-1/2 hidden md:block">
-              <img src="images/p3.jpg" alt="Person holding a cell phone" class="rounded-lg">
+              <img src="images/10117764_4346282.svg" alt="Person holding a cell phone" class="rounded-lg bg-sky-950">
             </div>
           </div>
           <div class="flex flex-row text-right my-2 items-center">
             <div class="md:basis-1/2 hidden md:block">
-              <img src="images/p3.jpg" alt="Person holding a cell phone" class="rounded-lg">
+              <img src="images/12063795_4884784.svg" alt="Person holding a cell phone" class="rounded-lg">
             </div>
             <div class="md:basis-1/2">
               <div class="text-teal-500">Featured Project</div>
-              <div class="text-2xl font-semibold">Online Judge</div>
+              <div class="text-2xl font-semibold pb-4">Online Judge</div>
               <div class="flex flex-row justify-end">
                 <a class="bg-green-700 mx-2 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
-                <a class="bg-green-700 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+                <a href="https://github.com/CHOUHAN-MOHIT/Online_Judge-MVP" target="_blank" class="bg-green-700 ml-2 text-xs rounded-full font-semibold px-2 py-1 flex items-center"><img
+                    src="/images/icons8-github-48.png" alt="Git Logo" class="w-4 h-4 mr-2">Github</a>
               </div>
               <div class="p-4 rounded bg-gray-800 md:-ml-16 mt-2">
                 Created a web-based coding platform using Django and Tailwind CSS that enables users to solve coding
@@ -220,13 +325,12 @@
           </div>
           <div class="flex flex-row text-left my-2 items-center">
             <div class="md:basis-1/2 z-10">
-              <div class="mt-auto text-teal-500">Featured Project</div>
               <div class="text-2xl font-semibold pb-4">
                 E-Learning Plateform
               </div>
               <div class="flex flex-row justify-start">
-                <a class="bg-green-700 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
-                <a class="bg-green-700 mx-2 text-xs rounded-full font-semibold px-2 py-1">Deployed on AWS</a>
+                <a href="https://github.com/CHOUHAN-MOHIT" target="_blank" class="bg-green-700 mr-2 text-xs rounded-full font-semibold px-2 py-1 flex items-center"><img
+                  src="/images/icons8-github-48.png" alt="Git Logo" class="w-4 h-4 mr-2">Github</a>
               </div>
               <div class="p-4 rounded bg-gray-800 md:-mr-16 mt-2">
                 A web based E-Learning plateform where a student can enroll in
@@ -240,7 +344,7 @@
               </div>
             </div>
             <div class="w-full md:basis-1/2 hidden md:block">
-              <img src="images/p3.jpg" alt="Person holding a cell phone" class="rounded-lg">
+              <img src="images/10782685_19197877.svg" alt="Person holding a cell phone" class="rounded-lg bg-sky-950">
             </div>
           </div>
         </div>
@@ -249,7 +353,7 @@
     <!-- contact -->
     <section class="bg-gray-900 text-white h-screen flex items-center justify-center">
       <div class="text-center max-w-5xl" id="contact">
-        <h3 class="text-teal-500 text-lg">04. What's Next?</h3>
+        <h3 class="text-teal-500 text-lg">05. What's Next?</h3>
         <h1 class="font-bold text-5xl mb-5">Get in Touch</h1>
         <p class="px-6 text-lg text-center">
           Thank you for visiting my portfolio! <br />
@@ -260,9 +364,21 @@
           prospect of working with others to create innovative and impactful
           solutions.
         </p>
+        
         <button class="border-solid border-2 border-teal-500 rounded px-8 py-3 mx-auto my-5 text-teal-500">
-          Say Hello
+          <a href="mailto:chouhanmohit424@gmail.com">Say Hello</a>
         </button>
+        <div class="flex justify-center space-x-4">
+          <!-- Twitter -->
+          <a href="https://github.com/CHOUHAN-MOHIT" target="_blank" rel="noopener noreferrer">
+            <img src="/images/icons8-git-48.png" alt="Github" class="w-12 h-12">
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/mohit-chouhan-645b42207/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/icons8-linkedin-48.png" alt="LinkedIn" class="w-12 h-12">
+          </a>
+          <!-- Add more social media icons/buttons as needed -->
+        </div>
       </div>
     </section>
   </div>
