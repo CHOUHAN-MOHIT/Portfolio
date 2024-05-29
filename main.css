@@ -678,6 +678,10 @@ video {
   height: 2.5rem;
 }
 
+.h-16{
+  height: 4rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1047,3 +1051,4 @@ video {
   margin: 0px auto;
   background-color: white;
 }
+
